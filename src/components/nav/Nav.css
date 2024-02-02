@@ -1,0 +1,24 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav__ul {
+    margin-top: 81px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav__ul-link {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nav__ul-link:hover {
+    color: #0386FF;
+}
