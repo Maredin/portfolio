@@ -17,8 +17,41 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
+    transition: text-shadow 0.3s;
 }
 
 .nav__ul-link:hover {
-    color: #0386FF;
+    text-shadow: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff;
+}
+
+.nav__contact-tel {
+    font-weight: 400;
+    font-size: 24px;
+    transition: text-shadow 0.3s;
+}
+
+.nav__contact-tel:hover {
+    text-shadow: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff;
+}
+
+.nav__contact-social {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 48px;
+}
+
+.nav__contact-social a {
+    border-radius: 12px;
+    transition: box-shadow 0.3s;
+}
+
+.nav__contact-social a:hover {
+    box-shadow: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff;
 }
