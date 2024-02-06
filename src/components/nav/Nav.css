@@ -55,3 +55,9 @@
         0 0 10px #fff,
         0 0 21px #fff;
 }
+
+@media (max-width: 648px) {
+    .nav {
+        display: none;
+    }
+}

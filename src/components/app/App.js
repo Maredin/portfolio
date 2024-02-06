@@ -5,11 +5,12 @@ import Promo from '../promo/promo';
 
 function App() {
   return (
-    <div className="main">
-      <div className="main__wrapper">
+    <div className="app">
+      <div className="burger">open</div>
+      <div className="app__wrapper">
         <Nav />
 
-        <div className="main__desc">
+        <div className="app__desc">
           <Promo />
         </div>
       </div>

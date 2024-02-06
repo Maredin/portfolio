@@ -6,7 +6,8 @@
   font-weight: 400;
 }
 
-.main {
+.app {
+  position: relative;
   background-image: url(./img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,7 +16,7 @@
   padding: 45px;
 }
 
-.main__wrapper {
+.app__wrapper {
   max-width: 1360px;
   margin: 0 auto;
   display: flex;
@@ -24,7 +25,7 @@
   gap: 60px;
 }
 
-.main__desc {
+.app__desc {
   max-width: 1009px;
   width: 100%;
   max-height: 100vh;
@@ -38,4 +39,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.burger {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-family: 'Neoneon';
+  font-size: 25px;
+  font-weight: 400;
+  z-index: 1;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px #fff,
+    0 0 12px rgb(123, 255, 0),
+    0 0 22px rgb(123, 255, 0),
+    0 0 42px rgb(123, 255, 0),
+    0 0 62px rgb(123, 255, 0),
+    0 0 82px rgb(123, 255, 0);
+
+}
+
+@media (max-width: 1440px) {
+  .app {
+    padding: calc((100vw - 320px)/(1440 - 320) * (45 - 15) + 15px);
+  }
+
+  .app__wrapper {
+    gap: calc((100vw - 320px)/(1440 - 320) * (60 - 15) + 15px);
+  }
+
 }
