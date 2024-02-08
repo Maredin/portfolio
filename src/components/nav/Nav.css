@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    transition: all 0.5s;
 }
 
 .nav__ul {
@@ -58,6 +59,13 @@
 
 @media (max-width: 648px) {
     .nav {
-        display: none;
+        position: absolute;
+        z-index: 1;
+        left: -100%;
+        top: 0px;
+        width: 100%;
+        background: black;
+        height: 100vh;
+        padding: 15px;
     }
 }

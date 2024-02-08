@@ -23,6 +23,7 @@
   justify-content: space-between;
   height: 100%;
   gap: 60px;
+
 }
 
 .app__desc {
@@ -48,16 +49,29 @@
   font-family: 'Neoneon';
   font-size: 25px;
   font-weight: 400;
-  z-index: 1;
+  z-index: 2;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+
+
+}
+
+.burger__open {
   text-shadow: 0 0 7px #fff,
     0 0 12px rgb(123, 255, 0),
     0 0 22px rgb(123, 255, 0),
     0 0 42px rgb(123, 255, 0),
     0 0 62px rgb(123, 255, 0),
     0 0 82px rgb(123, 255, 0);
+}
 
+.burger__close {
+  text-shadow: 0 0 7px #fff,
+    0 0 12px rgb(255, 0, 0),
+    0 0 22px rgb(123, 0, 0),
+    0 0 42px rgb(123, 0, 0),
+    0 0 62px rgb(123, 0, 0),
+    0 0 82px rgb(123, 0, 0);
 }
 
 @media (max-width: 1440px) {
