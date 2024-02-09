@@ -3,6 +3,8 @@ import './App.css';
 
 import Nav from '../nav/Nav';
 import Promo from '../promo/promo';
+import About from '../about/About';
+
 
 function App() {
 
@@ -26,10 +28,12 @@ function App() {
     <div className="app">
       <div className={'burger ' + (showBurger ? 'burger__close' : 'burger__open')} onClick={burger}>{showBurger ? 'close' : 'open'}</div>
       <div className="app__wrapper">
+
         <Nav />
 
         <div className="app__desc">
-          <Promo />
+          {/* <Promo showBurger={showBurger} /> */}
+          <About />
         </div>
       </div>
     </div>

@@ -52,8 +52,7 @@
   z-index: 2;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-
-
+  display: none;
 }
 
 .burger__open {
@@ -83,4 +82,10 @@
     gap: calc((100vw - 320px)/(1440 - 320) * (60 - 15) + 15px);
   }
 
+}
+
+@media (max-width: 648px) {
+  .burger {
+    display: block;
+  }
 }
