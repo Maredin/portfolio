@@ -52,7 +52,7 @@
     }
 
     .about__title {
-        font-size: calc((100vw - 320px)/(1440 - 320) * (64 - 50) + 50px);
+        font-size: calc((100vw - 320px)/(1440 - 320) * (64 - 45) + 45px);
     }
 
     .about__subtitle {
@@ -60,13 +60,13 @@
     }
 
     .about__desc {
-        margin-top: 35px;
+        margin-top: calc((100vw - 320px)/(1440 - 320) * (35 - 10) + 10px);
         max-width: 574px;
         font-size: calc((100vw - 320px)/(1440 - 320) * (20 - 14) + 14px);
     }
 
     .about__foto {
-        width: calc((100vw - 320px)/(1440 - 320) * (294 - 150) + 150px);
+        width: calc((100vw - 320px)/(1440 - 320) * (294 - 100) + 100px);
     }
 
 }

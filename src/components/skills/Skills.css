@@ -1,0 +1,84 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 19px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__cart {
+    width: 238px;
+    height: 280px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    border: 1px solid rgba(191, 148, 246, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(135deg, rgba(225, 202, 255, 0.05) 0%, rgba(56, 48, 227, 0.05) 100%);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(191, 148, 246, 0.2);
+}
+
+.skills__cart-title {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.skills__cart-img {
+    align-self: center;
+}
+
+.skills__cart-desc {
+    font-weight: 400;
+    font-size: 16px;
+    background: linear-gradient(90deg, #fff 0%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1440px) {
+    .skills {
+        gap: calc((100vw - 649px)/(1440 - 649) * (19 - 10) + 10px);
+    }
+
+    .skills__cart {
+        width: calc((100vw - 1240px)/(1440 - 1240) * (238 - 215) + 215px);
+        height: calc((100vw - 1240px)/(1440 - 1240) * (280 - 250) + 250px);
+        padding: calc((100vw - 649px)/(1440 - 649) * (15 - 10) + 10px);
+    }
+
+    .skills__cart-title {
+        font-size: calc((100vw - 649px)/(1440 - 649) * (18 - 14) + 14px);
+        font-weight: 400;
+    }
+
+    .skills__cart-desc {
+        font-size: calc((100vw - 320px)/(1440 - 320) * (16 - 14) + 14px);
+    }
+}
+
+@media (max-width: 1222px) {
+    .skills__cart-img {
+        height: calc((100vw - 649px)/(1222 - 649) * (65 - 30) + 30px);
+    }
+
+    .skills__cart {
+        height: auto;
+        width: calc((100vw - 649px)/(1222 - 649) * (215 - 100) + 100px);
+    }
+
+    .skills__cart-desc {
+        display: none;
+    }
+}

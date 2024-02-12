@@ -5,7 +5,7 @@ function About() {
     return (
         <div className="about">
             <h2 className="about__title">МАРАТ МАМИН</h2>
-            <h3 className="about__subtitle">Я веб разарботчик</h3>
+            <h3 className="about__subtitle">Frontend разработчик</h3>
 
             <div className="about__desc">
                 <p>В своей работе я использую такие технологий, как: HTML, Flex верстка, CSS, SCSS, React, React Hooks, JavaScript, Git, Gulp, Webpack, npm, БЭМ, Figma, CorelDRAW. Более подробно с проектами можно ознакомиться в моем репозитории на ГитХабе.
