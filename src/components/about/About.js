@@ -1,7 +1,8 @@
 import './About.css';
 
 import imgFoto from './img/foto.png';
-function About() {
+function About({ setBlurBg }) {
+    setBlurBg(true);
     return (
         <div className="about">
             <h2 className="about__title">МАРАТ МАМИН</h2>

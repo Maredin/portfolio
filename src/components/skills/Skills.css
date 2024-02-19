@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;
     gap: 19px;
     justify-content: center;
     align-items: center;
@@ -49,7 +48,7 @@
 
 @media (max-width: 1440px) {
     .skills {
-        gap: calc((100vw - 649px)/(1440 - 649) * (19 - 10) + 10px);
+        gap: calc((100vw - 320px)/(1440 - 320) * (19 - 15) + 15px);
     }
 
     .skills__cart {
@@ -70,12 +69,12 @@
 
 @media (max-width: 1222px) {
     .skills__cart-img {
-        height: calc((100vw - 649px)/(1222 - 649) * (65 - 30) + 30px);
+        height: calc((100vw - 320px)/(1222 - 320) * (65 - 30) + 30px);
     }
 
     .skills__cart {
         height: auto;
-        width: calc((100vw - 649px)/(1222 - 649) * (215 - 100) + 100px);
+        width: calc((100vw - 320px)/(1222 - 320) * (215 - 100) + 100px);
     }
 
     .skills__cart-desc {

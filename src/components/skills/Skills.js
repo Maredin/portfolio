@@ -94,12 +94,6 @@ function Skills({ setBlurBg }) {
                     </div>
                 )
             })}
-
-            {/*             <div className="skills__cart">
-                <img className="skills__cart-img" src={skilsItem[0].imgUrl} alt="html" />
-                <h3 className="skills__cart-title">{skilsItem[0].title}</h3>
-                <p className="skills__cart-desc">{skilsItem[0].desc}</p>
-            </div> */}
         </div>
     )
 }

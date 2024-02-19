@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import './promo.css';
 
-function Promo({ showBurger }) {
+function Promo({ showBurger, setBlurBg }) {
+    setBlurBg(true);
 
     function hideAnimations() {
         const title = document.querySelector('.promo__title');

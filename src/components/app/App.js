@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './App.css';
+import { Routes, Route, Link } from 'react-router-dom';
 
+import './App.css';
 import Nav from '../nav/Nav';
 import Promo from '../promo/promo';
 import About from '../about/About';
@@ -31,12 +32,18 @@ function App() {
       <div className={'burger ' + (showBurger ? 'burger__close' : 'burger__open')} onClick={burger}>{showBurger ? 'close' : 'open'}</div>
       <div className="app__wrapper">
 
-        <Nav />
+        <Nav burger={burger} />
 
         <div className={'app__desc ' + (blurBg ? 'blur' : null)}>
           {/* <Promo showBurger={showBurger} /> */}
           {/* <About /> */}
-          <Skills setBlurBg={setBlurBg} />
+          {/* <Skills setBlurBg={setBlurBg} /> */}
+
+          <Routes>
+            <Route path='/' element={<Promo showBurger={showBurger} setBlurBg={setBlurBg} />} />
+            <Route path='/About' element={<About setBlurBg={setBlurBg} />} />
+            <Route path='/Skills' element={<Skills setBlurBg={setBlurBg} />} />
+          </Routes>
         </div>
       </div>
     </div>
