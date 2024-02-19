@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import Nav from '../nav/Nav';
@@ -35,15 +35,13 @@ function App() {
         <Nav burger={burger} />
 
         <div className={'app__desc ' + (blurBg ? 'blur' : null)}>
-          {/* <Promo showBurger={showBurger} /> */}
-          {/* <About /> */}
-          {/* <Skills setBlurBg={setBlurBg} /> */}
 
           <Routes>
             <Route path='/' element={<Promo showBurger={showBurger} setBlurBg={setBlurBg} />} />
             <Route path='/About' element={<About setBlurBg={setBlurBg} />} />
             <Route path='/Skills' element={<Skills setBlurBg={setBlurBg} />} />
           </Routes>
+
         </div>
       </div>
     </div>
