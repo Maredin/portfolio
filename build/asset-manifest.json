@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "./static/css/main.bf2ce29d.css",
-    "main.js": "./static/js/main.5a3f36f1.js",
+    "main.css": "./static/css/main.bfe0f699.css",
+    "main.js": "./static/js/main.73fed9cc.js",
     "static/media/bg.png": "./static/media/bg.9e8c5c9e288fc39f81d0.png",
+    "static/media/forest.png": "./static/media/forest.a14e2f6097957f04915b.png",
     "static/media/foto.png": "./static/media/foto.c4958acc53895937ed4b.png",
+    "static/media/coffee.png": "./static/media/coffee.34d21fe9b1a63aa4e553.png",
+    "static/media/furniture.png": "./static/media/furniture.16cea1cf03131c728439.png",
+    "static/media/vtop.png": "./static/media/vtop.c08cedb711d484f57aab.png",
+    "static/media/space.png": "./static/media/space.70a0e6b95ce88a591ddd.png",
     "static/media/Neoneon.ttf": "./static/media/Neoneon.1286e4d1dc8621a65ac0.ttf",
     "static/media/Neoneon.otf": "./static/media/Neoneon.edd1faa9181e5d3a2505.otf",
+    "static/media/disign.png": "./static/media/disign.59580ad430a962fb69b4.png",
     "static/media/Neoneon.woff": "./static/media/Neoneon.736705203c1860509304.woff",
     "index.html": "./index.html",
-    "main.bf2ce29d.css.map": "./static/css/main.bf2ce29d.css.map",
-    "main.5a3f36f1.js.map": "./static/js/main.5a3f36f1.js.map"
+    "main.bfe0f699.css.map": "./static/css/main.bfe0f699.css.map",
+    "main.73fed9cc.js.map": "./static/js/main.73fed9cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf2ce29d.css",
-    "static/js/main.5a3f36f1.js"
+    "static/css/main.bfe0f699.css",
+    "static/js/main.73fed9cc.js"
   ]
 }

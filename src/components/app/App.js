@@ -3,9 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import Nav from '../nav/Nav';
-import Promo from '../promo/promo';
+import Promo from '../promo/Promo';
 import About from '../about/About';
 import Skills from '../skills/Skills';
+import Lending from '../portfolio/lending/Lending';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
             <Route path='/' element={<Promo showBurger={showBurger} setBlurBg={setBlurBg} />} />
             <Route path='/About' element={<About setBlurBg={setBlurBg} />} />
             <Route path='/Skills' element={<Skills setBlurBg={setBlurBg} />} />
+            <Route path='/Lending' element={<Lending setBlurBg={setBlurBg} />} />
           </Routes>
 
         </div>

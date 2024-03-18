@@ -6,6 +6,15 @@
     transition: all 0.5s;
 }
 
+.nav__logo path {
+    transition: all 0.3s;
+}
+
+.nav__logo:hover path {
+    fill: #ffffff;
+    filter: drop-shadow(0px 0px 2px rgb(255, 255, 255)) drop-shadow(0px 0px 2px rgb(255, 255, 255));
+}
+
 .nav__ul {
     margin-top: 81px;
     display: flex;
