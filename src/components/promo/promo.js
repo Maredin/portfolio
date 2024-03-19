@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import './promo.css';
 
 function Promo({ showBurger, setBlurBg }) {
-    setBlurBg(true);
+    useEffect(() => { setBlurBg(true) }, [setBlurBg])
+
 
     function hideAnimations() {
         const title = document.querySelector('.promo__title');

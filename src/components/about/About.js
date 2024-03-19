@@ -1,8 +1,10 @@
+import React, { useEffect } from 'react';
+
 import './About.css';
 
 import imgFoto from './img/foto.png';
 function About({ setBlurBg }) {
-    setBlurBg(true);
+    useEffect(() => { setBlurBg(true) }, [setBlurBg])
     return (
         <div className="about">
             <h2 className="about__title">МАРАТ МАМИН</h2>

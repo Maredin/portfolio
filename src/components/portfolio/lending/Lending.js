@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+
 import './lending.css';
 
 import imgLending1 from './img/coffee.png'
@@ -7,48 +9,71 @@ import imgLending4 from './img/furniture.png'
 import imgLending5 from './img/vtop.png'
 import imgLending6 from './img/space.png'
 
+const cartImgArr = [
+    {
+        id: Math.random(),
+        imgLink: "https://maredin.github.io/developer/",
+        imgSrc: imgLending6,
+        imgAlt: "img space"
+    },
+    {
+        id: Math.random(),
+        imgLink: "https://maredin.github.io/vtop3/",
+        imgSrc: imgLending5,
+        imgAlt: "img vtop"
+    },
+    {
+        id: Math.random(),
+        imgLink: "https://maredin.github.io/parallax3D/",
+        imgSrc: imgLending3,
+        imgAlt: "img forest"
+    },
+    {
+        id: Math.random(),
+        imgLink: "https://maredin.github.io/im-abby/",
+        imgSrc: imgLending2,
+        imgAlt: "img disign"
+    },
+    {
+        id: Math.random(),
+        imgLink: "https://maredin.github.io/coffee/",
+        imgSrc: imgLending1,
+        imgAlt: "img coffee"
+    },
+    {
+        id: Math.random(),
+        imgLink: "https://maredin.github.io/rossexpress/",
+        imgSrc: imgLending4,
+        imgAlt: "img furniture"
+    },
+]
 
-function Lending({ setBlurBg }) {
-    setBlurBg(true);
+
+function Lending({ setBlurBg, stepImg }) {
+    useEffect(() => { setBlurBg(true) }, [setBlurBg])
+
+    function AddCart({ stepImg }) {
+        return (
+            cartImgArr.map((item, i) => {
+                if (i < stepImg) {
+                    return (
+                        <div className="lending__cart" key={item.id}>
+                            <a href={item.imgLink} target='blank'>
+                                <img src={item.imgSrc} alt={item.imgAlt} className="lending__cart-img" />
+                            </a>
+                        </div>)
+                }
+            })
+        )
+    }
+
+
     return (
         <div className="lending">
             <h2 className='lending__title'>Лендинг</h2>
             <div className="lending__wrapper">
-                <div className="lending__cart">
-                    <a href="https://maredin.github.io/coffee/" target='blank'>
-                        <img src={imgLending1} alt="img coffee" className="lending__cart-img" />
-                    </a>
-                </div>
+                <AddCart stepImg={stepImg} />
 
-                <div className="lending__cart">
-                    <a href="https://maredin.github.io/im-abby/" target='blank'>
-                        <img src={imgLending2} alt="img disign" className="lending__cart-img" />
-                    </a>
-                </div>
-
-                <div className="lending__cart">
-                    <a href="https://maredin.github.io/parallax3D/" target='blank'>
-                        <img src={imgLending3} alt="img forest" className="lending__cart-img" />
-                    </a>
-                </div>
-
-                <div className="lending__cart">
-                    <a href="https://maredin.github.io/rossexpress/" target='blank'>
-                        <img src={imgLending4} alt="img furniture" className="lending__cart-img" />
-                    </a>
-                </div>
-
-                <div className="lending__cart">
-                    <a href="https://maredin.github.io/vtop3/" target='blank'>
-                        <img src={imgLending5} alt="img vtop" className="lending__cart-img" />
-                    </a>
-                </div>
-
-                <div className="lending__cart">
-                    <a href="https://maredin.github.io/developer/" target='blank'>
-                        <img src={imgLending6} alt="img space" className="lending__cart-img" />
-                    </a>
-                </div>
             </div>
         </div>
     )

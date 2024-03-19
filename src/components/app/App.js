@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
@@ -13,6 +13,8 @@ function App() {
 
   const [showBurger, setShowBurger] = useState(false);
   const [blurBg, setBlurBg] = useState(true);
+  const [stepImg, setStepImg] = useState(6);
+
 
   function burger() {
     const navMenu = document.querySelector('.nav');
@@ -28,6 +30,16 @@ function App() {
 
   }
 
+  window.addEventListener('resize', () => {
+    let widthBrouser = document.documentElement.clientWidth;
+    if (widthBrouser < 1240) {
+      setStepImg(4);
+    } else {
+      setStepImg(6);
+    }
+  }, true);
+
+
   return (
     <div className="app">
       <div className={'burger ' + (showBurger ? 'burger__close' : 'burger__open')} onClick={burger}>{showBurger ? 'close' : 'open'}</div>
@@ -41,7 +53,7 @@ function App() {
             <Route path='/' element={<Promo showBurger={showBurger} setBlurBg={setBlurBg} />} />
             <Route path='/About' element={<About setBlurBg={setBlurBg} />} />
             <Route path='/Skills' element={<Skills setBlurBg={setBlurBg} />} />
-            <Route path='/Lending' element={<Lending setBlurBg={setBlurBg} />} />
+            <Route path='/Lending' element={<Lending setBlurBg={setBlurBg} stepImg={stepImg} />} />
           </Routes>
 
         </div>
