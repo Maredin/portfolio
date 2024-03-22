@@ -48,9 +48,9 @@ function Nav({ burger }) {
                     <li><Link to="/About" className='nav__ul-link' onClick={() => burger()}>Обо мне</Link></li>
                     <li><Link to="/Skills" className='nav__ul-link' onClick={() => burger()}>Skills</Link></li>
                     <li><Link to="/Lending" className='nav__ul-link' onClick={() => burger()}>Лейдинг</Link></li>
-                    <li><Link to="!#" className='nav__ul-link' onClick={() => burger()}>Многостраничник</Link></li>
-                    <li><Link to="!#" className='nav__ul-link' onClick={() => burger()}>Интернет магазин</Link></li>
-                    <li><Link to="!#" className='nav__ul-link' onClick={() => burger()}>React - приложения</Link></li>
+                    <li><Link to="/Multipage" className='nav__ul-link' onClick={() => burger()}>Многостраничник</Link></li>
+                    <li><Link to="/Eshop" className='nav__ul-link' onClick={() => burger()}>Интернет магазин</Link></li>
+                    <li><Link to="/ReactPage" className='nav__ul-link' onClick={() => burger()}>React - приложения</Link></li>
                 </ul>
             </div>
 
@@ -58,9 +58,9 @@ function Nav({ burger }) {
                 <a href="tel:+79279268009" className="nav__contact-tel">8-927-926-80-09</a>
 
                 <div className="nav__contact-social">
-                    <a href=""><img src={watsapp} alt="watsapp" /></a>
-                    <a href=""><img src={telegram} alt="telegram" /></a>
-                    <a href=""><img src={github} alt="github" /></a>
+                    <a href="https://web.whatsapp.com/send?phone=+79279268009" target='blank'><img src={watsapp} alt="watsapp" /></a>
+                    <a href="https://t.me/Mringer13" target='blank'><img src={telegram} alt="telegram" /></a>
+                    <a href="https://github.com/Maredin" target='blank'><img src={github} alt="github" target='blank' /></a>
                 </div>
             </div>
 
