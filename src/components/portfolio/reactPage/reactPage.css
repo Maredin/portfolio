@@ -39,6 +39,7 @@
 
 .reactPage__cart img {
     max-width: 400px;
+    border-radius: 10px;
 }
 
 .reactPage__wrapper {

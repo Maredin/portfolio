@@ -52,7 +52,15 @@
     20%,
     24%,
     55% {
-        text-shadow: none;
+        text-shadow:
+            0 0 4px #ffffff00,
+            0 0 11px #ffffff00,
+            0 0 19px #ffffff00,
+            0 0 40px rgba(4, 122, 233, 0),
+            0 0 80px rgba(4, 122, 233, 0),
+            0 0 90px rgba(4, 122, 233, 0),
+            0 0 100px rgba(4, 122, 233, 0),
+            0 0 150px rgba(4, 122, 233, 0);
     }
 }
 
@@ -62,6 +70,7 @@
     flex-wrap: wrap;
 }
 
+.promo__btns a,
 .promo__btns button {
     border-radius: 50px;
     box-shadow: inset 10px 10px 20px 0px rgba(9, 63, 255, 0.49);
@@ -109,6 +118,7 @@
         gap: calc((100vw - 320px)/(1440 - 320) * (46 - 20) + 20px);
     }
 
+    .promo__btns a,
     .promo__btns button {
         border-radius: 50px;
         padding: 15px 30px;
@@ -118,6 +128,8 @@
 }
 
 @media (max-width: 883px) {
+
+    .promo__btns a,
     .promo__btns button {
         width: 100%;
     }

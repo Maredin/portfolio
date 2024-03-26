@@ -26,7 +26,6 @@
     font-weight: 300;
     font-size: 28px;
     color: #fff;
-    text-decoration: underline;
 }
 
 .about__desc {
@@ -52,7 +51,7 @@
     }
 
     .about__title {
-        font-size: calc((100vw - 320px)/(1440 - 320) * (64 - 45) + 45px);
+        font-size: calc((100vw - 320px)/(1440 - 320) * (64 - 29) + 29px);
     }
 
     .about__subtitle {

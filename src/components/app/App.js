@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
@@ -16,7 +16,7 @@ function App() {
 
   const [showBurger, setShowBurger] = useState(false);
   const [blurBg, setBlurBg] = useState(true);
-  const [stepImg, setStepImg] = useState(6);
+  const [stepImg, setStepImg] = useState(0);
 
 
   function burger() {
@@ -33,7 +33,9 @@ function App() {
 
   }
 
-  window.addEventListener('resize', () => {
+  // Изменения количества картинок работ от расширения экрана
+  useEffect(() => { stepImgOnWidth() }, [])
+  function stepImgOnWidth() {
     let widthBrouser = document.documentElement.clientWidth;
     let heigthBrouser = document.documentElement.clientHeight;
 
@@ -45,8 +47,14 @@ function App() {
     else {
       setStepImg(6);
     }
+  }
+
+  window.addEventListener('resize', () => {
+    stepImgOnWidth();
 
   }, true);
+
+
 
 
   return (

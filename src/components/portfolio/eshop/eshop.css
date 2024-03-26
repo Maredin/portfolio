@@ -39,6 +39,7 @@
 
 .eshop__cart img {
     max-width: 400px;
+    border-radius: 10px;
 }
 
 .eshop__wrapper {

@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "./static/css/main.ceae4d0b.css",
-    "main.js": "./static/js/main.f41b455c.js",
+    "main.css": "./static/css/main.365092d1.css",
+    "main.js": "./static/js/main.f25bebb0.js",
     "static/media/bg.png": "./static/media/bg.9e8c5c9e288fc39f81d0.png",
     "static/media/forest.png": "./static/media/forest.a14e2f6097957f04915b.png",
     "static/media/foto.png": "./static/media/foto.c4958acc53895937ed4b.png",
     "static/media/coffee.png": "./static/media/coffee.34d21fe9b1a63aa4e553.png",
     "static/media/electroshop.png": "./static/media/electroshop.de8f96d242f6de9baf83.png",
-    "static/media/furniture.png": "./static/media/furniture.16cea1cf03131c728439.png",
     "static/media/batman.png": "./static/media/batman.92f8270d11b8424488d2.png",
     "static/media/vtop.png": "./static/media/vtop.c08cedb711d484f57aab.png",
     "static/media/oncoffee.png": "./static/media/oncoffee.0f95a9c6bd7915fcdaa8.png",
     "static/media/space.png": "./static/media/space.70a0e6b95ce88a591ddd.png",
     "static/media/Neoneon.ttf": "./static/media/Neoneon.1286e4d1dc8621a65ac0.ttf",
     "static/media/Neoneon.otf": "./static/media/Neoneon.edd1faa9181e5d3a2505.otf",
+    "static/media/dog.png": "./static/media/dog.5424b5813069b4caf2f5.png",
     "static/media/todo.png": "./static/media/todo.c2a5c9b8d7588a8116e8.png",
     "static/media/disign.png": "./static/media/disign.59580ad430a962fb69b4.png",
     "static/media/water.png": "./static/media/water.1e4b6286f897c4f2f63f.png",
     "static/media/Neoneon.woff": "./static/media/Neoneon.736705203c1860509304.woff",
     "static/media/user.png": "./static/media/user.d0e9e7b5ac6faf405ab1.png",
     "index.html": "./index.html",
-    "main.ceae4d0b.css.map": "./static/css/main.ceae4d0b.css.map",
-    "main.f41b455c.js.map": "./static/js/main.f41b455c.js.map"
+    "main.365092d1.css.map": "./static/css/main.365092d1.css.map",
+    "main.f25bebb0.js.map": "./static/js/main.f25bebb0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ceae4d0b.css",
-    "static/js/main.f41b455c.js"
+    "static/css/main.365092d1.css",
+    "static/js/main.f25bebb0.js"
   ]
 }

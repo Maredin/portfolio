@@ -39,6 +39,7 @@
 
 .multipage__cart img {
     max-width: 400px;
+    border-radius: 10px;
 }
 
 .multipage__wrapper {

@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 import './reactPage.css';
 
-import imgLending1 from './img/todo.png';
-import imgLending2 from './img/water.png';
+import imgLending1 from './img/water.png';
+import imgLending2 from './img/todo.png';
 import imgLending3 from './img/user.png';
 import imgLending4 from './img/oncoffee.png';
 

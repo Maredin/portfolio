@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 
 import './lending.css';
 
-import imgLending1 from './img/coffee.png'
-import imgLending2 from './img/disign.png'
-import imgLending3 from './img/forest.png'
-import imgLending4 from './img/furniture.png'
-import imgLending5 from './img/vtop.png'
-import imgLending6 from './img/space.png'
+import imgLending1 from './img/coffee.png';
+import imgLending2 from './img/disign.png';
+import imgLending3 from './img/forest.png';
+import imgLending4 from './img/dog.png';
+import imgLending5 from './img/vtop.png';
+import imgLending6 from './img/space.png';
 
 const cartImgArr = [
     {
@@ -21,6 +21,12 @@ const cartImgArr = [
         imgLink: "https://maredin.github.io/vtop3/",
         imgSrc: imgLending5,
         imgAlt: "img vtop"
+    },
+    {
+        id: Math.random(),
+        imgLink: "https://maredin.github.io/dog/",
+        imgSrc: imgLending4,
+        imgAlt: "img dog"
     },
     {
         id: Math.random(),
@@ -39,12 +45,6 @@ const cartImgArr = [
         imgLink: "https://maredin.github.io/coffee/",
         imgSrc: imgLending1,
         imgAlt: "img coffee"
-    },
-    {
-        id: Math.random(),
-        imgLink: "https://maredin.github.io/rossexpress/",
-        imgSrc: imgLending4,
-        imgAlt: "img furniture"
     },
 ]
 

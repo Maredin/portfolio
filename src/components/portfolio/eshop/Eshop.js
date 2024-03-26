@@ -8,7 +8,7 @@ import imgLending1 from './img/electroshop.png'
 const cartImgArr = [
     {
         id: Math.random(),
-        imgLink: "https://maredin.github.io/batman/",
+        imgLink: "https://maredin.github.io/electronics_shop/",
         imgSrc: imgLending1,
         imgAlt: "img electro"
     },
