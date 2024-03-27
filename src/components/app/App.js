@@ -17,7 +17,8 @@ function App() {
   const [showBurger, setShowBurger] = useState(false);
   const [blurBg, setBlurBg] = useState(true);
   const [stepImg, setStepImg] = useState(0);
-
+  const [neon, setNeon] = useState(true);
+  const [webSize] = useState(document.documentElement.clientWidth);
 
   function burger() {
     const navMenu = document.querySelector('.nav');
@@ -25,7 +26,6 @@ function App() {
     if (showBurger) {
       setShowBurger(!showBurger);
       navMenu.style.left = '-100%';
-
     } else if (!showBurger) {
       setShowBurger(!showBurger);
       navMenu.style.left = '0px';
@@ -62,12 +62,12 @@ function App() {
       <div className={'burger ' + (showBurger ? 'burger__close' : 'burger__open')} onClick={burger}>{showBurger ? 'close' : 'open'}</div>
       <div className="app__wrapper">
 
-        <Nav burger={burger} />
+        <Nav burger={burger} webSize={webSize} />
 
         <div className={'app__desc ' + (blurBg ? 'blur' : null)}>
 
           <Routes>
-            <Route path='/' element={<Promo showBurger={showBurger} setBlurBg={setBlurBg} />} />
+            <Route path='/' element={<Promo showBurger={showBurger} setBlurBg={setBlurBg} burger={burger} neon={neon} setNeon={setNeon} />} />
             <Route path='/About' element={<About setBlurBg={setBlurBg} />} />
             <Route path='/Skills' element={<Skills setBlurBg={setBlurBg} />} />
             <Route path='/Lending' element={<Lending setBlurBg={setBlurBg} stepImg={stepImg} />} />

@@ -66,6 +66,14 @@
 
     .about__foto {
         width: calc((100vw - 320px)/(1440 - 320) * (294 - 100) + 100px);
+
     }
 
+}
+
+@media (max-width: 300px) {
+    .about__foto {
+        display: none;
+
+    }
 }

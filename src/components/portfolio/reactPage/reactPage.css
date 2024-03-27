@@ -61,7 +61,7 @@
     }
 
     .reactPage__cart img {
-        max-width: calc((100vw - 320px)/(1440 - 320) * (400 - 210) + 210px);
+        max-width: calc((100vw - 320px)/(1440 - 320) * (345 - 210) + 210px);
     }
 }
 

@@ -46,6 +46,12 @@
     -webkit-text-fill-color: transparent;
 }
 
+@media (max-width: 1920px) {
+    .skills__cart {
+        height: calc((100vw - 1440px)/(1920 - 1440) * (280 - 235) + 235px);
+    }
+}
+
 @media (max-width: 1440px) {
     .skills {
         gap: calc((100vw - 320px)/(1440 - 320) * (19 - 15) + 15px);
@@ -53,7 +59,7 @@
 
     .skills__cart {
         width: calc((100vw - 1240px)/(1440 - 1240) * (238 - 215) + 215px);
-        height: calc((100vw - 1240px)/(1440 - 1240) * (280 - 250) + 250px);
+        height: 235px;
         padding: calc((100vw - 649px)/(1440 - 649) * (15 - 10) + 10px);
     }
 
