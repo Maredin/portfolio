@@ -5,12 +5,12 @@ import watsapp from './img/Whatsapp.png';
 import telegram from './img/Telegram.png';
 import github from './img/Github.png'
 
-function Nav({ burger, webSize }) {
+function Nav({ burger, widthBrouser, setNeon }) {
     return (
         <div className="nav">
 
             <div className="nav__ul-wrapper">
-                <Link to="/" onClick={() => burger()}>
+                <Link to="/" onClick={() => { burger(); setNeon(true) }}>
                     <svg className='nav__logo' xmlns="http://www.w3.org/2000/svg" width="90" height="54" viewBox="0 0 90 54" fill="none">
 
                         <path fillRule="evenodd" clipRule="evenodd" d="M84.8552 52.7724L87.3351 53.9997V9.8694C87.3351 6.37785 84.0369 3.81463 80.6312 4.65672L45.186 14.7535L0.612061 2.4541L7.5579 6.92277L45.1965 17.3143L81.2662 7.03972C83.0928 6.61181 84.8552 7.99074 84.8552 9.8694V52.7724Z" fill="white" />
@@ -58,7 +58,7 @@ function Nav({ burger, webSize }) {
                 <a href="tel:+79279268009" className="nav__contact-tel">8-927-926-80-09</a>
 
                 <div className="nav__contact-social">
-                    <a href={(webSize > 1023) ? "https://web.whatsapp.com/send?phone=+79279268009" : "whatsapp://send?phone=+79279268009"} target='blank'><img src={watsapp} alt="watsapp" /></a>
+                    <a href={(widthBrouser > 1023) ? "https://web.whatsapp.com/send?phone=+79279268009" : "whatsapp://send?phone=+79279268009"} target='blank'><img src={watsapp} alt="watsapp" /></a>
                     <a href="https://t.me/Mringer13" target='blank'><img src={telegram} alt="telegram" /></a>
                     <a href="https://github.com/Maredin" target='blank'><img src={github} alt="github" target='blank' /></a>
                 </div>

@@ -18,7 +18,8 @@ function App() {
   const [blurBg, setBlurBg] = useState(true);
   const [stepImg, setStepImg] = useState(0);
   const [neon, setNeon] = useState(true);
-  const [webSize] = useState(document.documentElement.clientWidth);
+  const [widthBrouser, setWidthBrouser] = useState(document.documentElement.clientWidth);
+  const [heigthBrouser, setHeigthBrouser] = useState(document.documentElement.clientHeight);
 
   function burger() {
     const navMenu = document.querySelector('.nav');
@@ -36,8 +37,6 @@ function App() {
   // Изменения количества картинок работ от расширения экрана
   useEffect(() => { stepImgOnWidth() }, [])
   function stepImgOnWidth() {
-    let widthBrouser = document.documentElement.clientWidth;
-    let heigthBrouser = document.documentElement.clientHeight;
 
     if (widthBrouser < 1240 && heigthBrouser < 850) {
       setStepImg(4);
@@ -51,7 +50,8 @@ function App() {
 
   window.addEventListener('resize', () => {
     stepImgOnWidth();
-
+    setWidthBrouser(document.documentElement.clientWidth)
+    setHeigthBrouser(document.documentElement.clientHeight)
   }, true);
 
 
@@ -59,10 +59,10 @@ function App() {
 
   return (
     <div className="app">
-      <div className={'burger ' + (showBurger ? 'burger__close' : 'burger__open')} onClick={burger}>{showBurger ? 'close' : 'open'}</div>
+      <div className={'burger ' + (showBurger ? 'burger__close' : 'burger__open')} onClick={() => { burger(); setNeon(!neon) }}>{showBurger ? 'close' : 'open'}</div>
       <div className="app__wrapper">
 
-        <Nav burger={burger} webSize={webSize} />
+        <Nav burger={burger} widthBrouser={widthBrouser} setNeon={setNeon} />
 
         <div className={'app__desc ' + (blurBg ? 'blur' : null)}>
 
