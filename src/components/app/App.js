@@ -35,8 +35,12 @@ function App() {
   }
 
   // Изменения количества картинок работ от расширения экрана
-  useEffect(() => { stepImgOnWidth() }, [])
+  useEffect(() => { stepImgOnWidth() }, [widthBrouser, heigthBrouser]);
+
   function stepImgOnWidth() {
+
+    setWidthBrouser(document.documentElement.clientWidth);
+    setHeigthBrouser(document.documentElement.clientHeight);
 
     if (widthBrouser < 1240 && heigthBrouser < 850) {
       setStepImg(4);
@@ -46,13 +50,15 @@ function App() {
     else {
       setStepImg(6);
     }
+
+    window.addEventListener('resize', stepImgOnWidth);
+
+    return () => { window.removeEventListener('resize', stepImgOnWidth); }
   }
 
-  window.addEventListener('resize', () => {
-    stepImgOnWidth();
-    setWidthBrouser(document.documentElement.clientWidth)
-    setHeigthBrouser(document.documentElement.clientHeight)
-  }, true);
+
+
+
 
 
 
