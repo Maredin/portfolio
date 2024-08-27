@@ -6,9 +6,16 @@ import imgLending1 from './img/water.png';
 import imgLending2 from './img/todo.png';
 import imgLending3 from './img/user.png';
 import imgLending4 from './img/oncoffee.png';
+import imgLending5 from './img/quiz.webp';
 
 
 const cartImgArr = [
+    {
+        id: Math.random(),
+        imgLink: "https://maredin.github.io/react.quiz/build/",
+        imgSrc: imgLending5,
+        imgAlt: "img quiz"
+    },
     {
         id: Math.random(),
         imgLink: "https://maredin.github.io/react.coffee/build/",
